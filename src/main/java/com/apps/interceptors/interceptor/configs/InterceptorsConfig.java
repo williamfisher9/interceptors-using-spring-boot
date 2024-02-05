@@ -22,7 +22,7 @@ public class InterceptorsConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry){
         registry.addInterceptor(requestInterceptor);
-        registry.addInterceptor(headersInjectorInterceptor);
+        registry.addInterceptor(headersInjectorInterceptor).addPathPatterns("/api/v1/app/params");
     }
 
 }

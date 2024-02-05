@@ -7,7 +7,7 @@ The are executed before sending the request to the controller, before sending th
 2. postHandle() method − it is used to perform operations before sending the response to the client.
 3. afterCompletion() method − it is used to perform operations after completing the request and response.
 
-For example, an interceptor can be used to add a request header before sending the request to the controller and to add a response header before sending the response to the client.
+For example, an interceptor can be used to add a response header before sending the response to the client.
 
 ### preHandle():
 1. The interceptor invokes preHandle() before handling a request.
